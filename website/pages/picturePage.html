@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <title>picture page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #but{
+            width: 100px;
+            height: 50;
+        }
+        body{
+            background-image: url(/website/pages/pic/background.jpeg);
+        }
+    </style>
 </head>
 <body>
    
@@ -11,11 +20,11 @@
 
      <div id="custom-alert" class="custom-alert">
     <p id="alert-text"></p>
-    <button onclick="closeCustomAlert()">close</button>
+    <button onclick="closeCustomAlert()" id="but">close</button>
   </div>
    <div class="buttonDiv">
-    <button id="prevButton" class="button"><-</button>
-    <button id="nextButton" class="button">-></button>
+   <button id="prevButton" class="button"><img src="/website/pages/pic/left.jpeg" class="imgbutton"></button>
+        <button id="nextButton" class="button"><img src="/website/pages/pic/right.jpg" class="imgbutton"></button>
     </div>
 </body>
 <script>

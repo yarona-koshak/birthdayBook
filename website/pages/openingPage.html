@@ -6,21 +6,77 @@
   <link rel="stylesheet" href="style.css">
   <style>
     #giftbut{
-      width: px;
-      height: px;
+      width: 100px;
+      height: 50px;
     }
+    .box{
+  width: 200px;
+  height: 200px;
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(200px);
+  position: absolute;
+}
+
+    .box3 {
+  width: 200px;
+  height: 200px;
+  transition: all 1s;
+  opacity:0;
+  transform: translateY(200px);
+   position: absolute;
+  right: 750px; 
+ 
+}
+
+
+.box2 {
+  opacity: 1;
+  transform: translateY(-550px);
+}
+
+
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-150px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+     .space-between-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px; 
+}
+body{
+  overflow: hidden;
+}
   </style>
 </head>
 
 <body>
-  <h1>כיתוב של אסיה </h1>
-  <img src="" alt="cute_ raccoon" class="img">
-  <br>
-  <button id="giftbut">to get the gift</button>
+  <div class="contener">
+<img src="/website/pages/pic/happyBirthdayText.webp" id="img">
+<button id="giftbut">to get the gift</button>
+  </div>
+  <div class="space-between-container">
+        <div class="box">
+             <img src="/website/pages/pic/blon.webp">
+        </div>  
+        <div class="box3">
+             <img src="/website/pages/pic/blon.webp">
+        </div>
+  </div>
+ 
 </body>
-<script>
-  document.getElementById("giftbut").addEventListener("click", function() {
-    window.location.href = "bookStart.html";
-  });
-</script>
+<script type="module" src="openingPage.js"></script>
 </html>

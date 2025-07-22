@@ -1,15 +1,15 @@
 /*  אורך ורוחב של תמונות  */
 .img{
-    width: px;
-    height: px;
+    width: 300px;
+    height: 300px;
      gap: 20px;
       justify-content: center;
       margin: 20px;
 }
 /* אורך ורוחב של כפתורים שמעבירים בין העמודים */
 .button{
-    width: px;
-    height: px;
+    width: 100px;
+    height: 100px;
 }
 .buttonDiv{
     display: flex;
@@ -23,8 +23,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: p;
-  color:p;
+  background-color:rgb(247, 252, 252);
+  color: #000;;
   padding: 80px 70px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -36,9 +36,20 @@
 .custom-alert button {
   margin-top: 15px;
   background-color:p;
-  color:p;
+  color:#000;
   border: none;
   padding: 10px 30px;
   border-radius: 5px;
   cursor: pointer;
 }
+
+  .contener{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+  
+   .imgbutton{
+      width: 90px;
+    height: 90px;
+   }
