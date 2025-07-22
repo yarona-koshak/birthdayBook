@@ -11,15 +11,69 @@
             height: px;
             
         }
+          #imgCat{
+            width: 400px;
+            height: 400px;
+        }
+   
+
+    #confetti-container {
+      position: fixed;
+      transform: translateY(300px);
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    .confetti {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      animation: rise 2s ease-out forwards;
+      opacity: 0.8;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-50vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    #div{
+         position: fixed;
+    bottom: 150px;
+    right: 50px;;
+    width: 350px;
+    height: auto;
+    }
+    #click{
+        right: 0;
+        font-size: larger;
+    }
     </style>
 </head>
 <body>
-
+     <div class="container">
+<div id="confetti-container"></div>
+    <div id="div">
+<img src="/website/pages/pic/catconfiti.png" id="imgCat">
+<div id="click">click on me</div>
+</div>
     <button id="startButton">open the book</button>
+     </div>
 </body>
 <script>
     document.getElementById("startButton").addEventListener("click", function() {
         window.location.href = "firstPage.html";
     });
 </script>
+<script type="module" src="firstPage.js"></script>
 </html>

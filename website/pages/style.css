@@ -10,12 +10,14 @@
 .button{
     width: 100px;
     height: 100px;
+
 }
 .buttonDiv{
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 10px; 
+    bottom: 0;
 }
 /* הודעה ביוצאת מתמונות */
 .custom-alert {
@@ -53,3 +55,4 @@
       width: 90px;
     height: 90px;
    }
+   
