@@ -4,13 +4,22 @@
     <title>book cover</title>
     <style>
         body{
-            background:image-set();
+              overflow: hidden;
         }
         #startButton{
-            width: px;
-            height: px;
-            
+            width: 150px;
+            height: 150px;
+            font-size: xx-large;
+             background-color:white;
+             border-radius: 30%;
+
         }
+        .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    height: 100vh;        
+}
           #imgCat{
             width: 400px;
             height: 400px;
@@ -59,6 +68,7 @@
         font-size: larger;
     }
     </style>
+
 </head>
 <body>
      <div class="container">
@@ -67,7 +77,9 @@
 <img src="/website/pages/pic/catconfiti.png" id="imgCat">
 <div id="click">click on me</div>
 </div>
-    <button id="startButton">open the book</button>
+
+<div class="contener"><button id="startButton" >open the book</button></div>
+    
      </div>
 </body>
 <script>
