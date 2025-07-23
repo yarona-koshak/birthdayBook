@@ -1,7 +1,7 @@
 /*  אורך ורוחב של תמונות  */
 .img{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
      gap: 20px;
       justify-content: center;
       margin: 20px;
